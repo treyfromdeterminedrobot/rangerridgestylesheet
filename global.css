@@ -1,3 +1,7 @@
 h1 {
     font-size: 5em;
 }
+
+#sb-main-container {
+    background-color: #000;
+}
