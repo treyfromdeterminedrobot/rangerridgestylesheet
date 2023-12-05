@@ -1,7 +1,139 @@
-h1 {
-    font-size: 5em;
+
+/* FONT IMPORT  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+
+/* ALL STYLES */
+#sb-main-container {
+    background-image: url(/uploads/rangerridgereservations/image_files/background/8dbc366b0f1a66a780bbd90cfc3cbc22.jpg) !important;
+    background-position: top !important;
+    background-repeat: no-repeat;
 }
 
-#sb-main-container {
-    background-color: #000;
+.column {
+    max-width:1600px;
+}
+
+#main #main-content {
+    box-shadow: none;
+    max-width: 1600px;
+}
+
+
+
+
+/* MAIN NAVIGATION */
+#header {
+    background:none;
+    box-shadow: none;
+}
+
+#sb_main #header .logo a img {
+    max-height: 200px !important;
+}
+
+#sb_main #header #sb_menu .nav li a {
+    color: #fff !important;
+    font-family: "Playfair Display SC";
+    font-size: 10pt;
+}
+
+#sb_main #header #sb_menu .nav li a:hover {
+    border-bottom-color: #d1ac5b !important;
+}
+
+#header .nav-wrapper #sb_menu .nav li:has(a[href="#membership"]) {
+    display: none;
+}
+
+
+
+/* = = = = = = = = = = = = = = = = =  */
+/* Booking area styles */
+
+#sb_main #main #sb_content #steps-nav #sb_booking_info ul li .content .title-small {
+    color: #414345 !important;
+    font-family: "Playfair Display SC";
+    font-weight: 700;
+    font-style:normal;
+}
+
+section#main-buttons {
+    background:none !important;
+}
+
+#main #main-buttons .wrapper .inner .bar .btn.map {
+    display: none !important;
+}
+
+#sb-timeline #steps-nav #menu-active-bg {
+    display: none !important;
+}
+
+#sb_main #main #sb_content #steps-content .item .cap {
+    font-size: 36px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    line-height: 35px;
+    font-family: 'Playfair Display SC';
+    color: #414345 !important;
+    margin-left: 5px;
+}
+
+#sb_main #main #sb_content #steps-content .item .cap.short {
+    height: auto;
+    border-bottom-style: solid;
+    padding: 0 0 10px;
+    width: auto;
+    float: left;
+    border-bottom-color: #d1ac5b;
+}
+
+#sb_main #main #sb_content #steps-content .item .txt {
+    height: auto !important;
+    float:left;
+}
+
+.title-main, .inner-brand-font {
+    font-family: "Playfair Display SC";
+}
+
+#sb_main #main #sb_content #steps-content .item .btn.select a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 14px;
+}
+
+#sb-timeline #steps #steps-content #sb_booking_content .datetime-step #sb_timeview_container .timeline-wrapper #sb_time_slots_container .slot {
+    margin:1% !important;
+    width:18% !important;
+}
+
+#sb-timeline #steps #steps-content #sb_booking_content .datetime-step #sb_timeview_container .timeline-wrapper #sb_time_slots_container .slot a span.end-time {
+    width:auto;
+}
+
+.content .bar-service {
+    float:left;
+    width:100%;
+}
+
+
+/* MY BOOKINGS PAGE */
+
+#sb_main #main #sb_content #booking-result-view #booking-result-tabs .tabs_top_wrap .tabs-container .tab-link a, #booking-result-view #booking-result-tabs .tabs-container .tab-link a {
+    font-family: "Playfair Display SC";
+    color: #333;
+}
+
+
+
+/* MEMBERSHIPS PAGE */
+#booking-result-view #booking-result-tabs .tabs-container .tab-link a[href="membership"] {
+    display:none !important;
 }
