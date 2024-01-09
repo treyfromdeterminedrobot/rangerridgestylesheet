@@ -1,216 +1,407 @@
 /* FONT IMPORT  */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
-
-
-/* THIS IS A TEST  */
-
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"); */
 
 /* ALL STYLES */
-#sb-main-container {
-    background-image: url(/uploads/rangerridgereservations/image_files/background/8dbc366b0f1a66a780bbd90cfc3cbc22.jpg) !important;
-    background-position: top !important;
-    background-repeat: no-repeat;
-}
-
 .column {
-    max-width:1600px;
-}
-
-#main #main-content {
+    max-width: 1600px;
+  }
+  
+  #main #main-content {
     background: url(https://irp.cdn-website.com/bf4fe880/dms3rep/multi/basic-triangle-bottom.svg);
+    background-size: 100vw;
     box-shadow: none;
     max-width: 100%;
-    padding-top: 140px;
-}
-
-#sb_content {
+    padding-top: 200px;
+  }
+  
+  #sb_content {
     background: #fff;
-}
-
-#sb_main #content-view .index-data-wrapper .decor-wrap {
+  }
+  
+  #sb_main #content-view .index-data-wrapper .decor-wrap {
     border: none !important;
-}
-
-
-/* HOME PAGE STYLES  */
-#sb_main #content-view .index-data-wrapper {
+  }
+  
+  /* HOME PAGE STYLES  */
+  #sb_main #content-view .index-data-wrapper {
     padding: 0 180px 405px;
-}
-
-
-
-/* MAIN NAVIGATION */
-#header {
-    background:none;
+  }
+  
+  /* MAIN NAVIGATION */
+  #header {
+    background: none;
     box-shadow: none;
-}
-
-#sb_main #header .logo a img {
+  }
+  
+  #sb_main #header .logo a img {
     max-height: 200px !important;
-}
-
-#sb_main #header #sb_menu .nav li a {
+  }
+  
+  #sb_main #header #sb_menu .nav li a {
     color: #fff !important;
     font-family: "Playfair Display SC";
     font-size: 10pt;
-}
-
-#sb_main #header #sb_menu .nav li a:hover {
+  }
+  
+  #sb_main #header #sb_menu .nav li a:hover {
     border-bottom-color: #d1ac5b !important;
-}
-
-#header .nav-wrapper #sb_menu .nav li:has(a[href="#membership"]) {
+  }
+  
+  #header
+    .nav-wrapper
+    #sb_menu
+    .nav
+    #sb_appended_menu_item
+    ul
+    li:has(a[href="#membership"]) {
     display: none;
-}
-
-
-/* = = = = = = = = = = = = = = = = =  */
-/* Header area styles */
-section#main-buttons {
+  }
+  
+  #header .nav-wrapper #sb_menu .nav #sb_appended_menu_item ul li a {
+    color: #414345 !important;
+  }
+  
+  /* = = = = = = = = = = = = = = = = =  */
+  /* Main Menu styles */
+  #header .items-wrapper .nav-item .cart-container {
+    background: #fff;
+    border-radius: 20px;
+  }
+  
+  #sb_main #header .items-wrapper #sb_client_info .item-container {
+    background: #fff !important;
+  }
+  
+  /* = = = = = = = = = = = = = = = = =  */
+  /* Header area styles */
+  section#main-buttons {
     min-height: 300px !important;
-}
-
-
-/* = = = = = = = = = = = = = = = = =  */
-/* Booking area styles */
-
-/* Booking Area Header Styles  */
-
-#sb-timeline #steps-nav {
+  }
+  
+  /* = = = = = = = = = = = = = = = = =  */
+  /* Booking area styles */
+  #time-settings {
+    display: none;
+  }
+  
+  /* Booking Area Header Styles  */
+  
+  #sb-timeline #steps-nav {
     box-shadow: none;
     border-bottom: 1px solid #e7e7e7;
     margin-bottom: 0px;
-}
-
-#steps {
+  }
+  
+  #steps {
     min-height: auto;
-    background: #F6F4EA;
+    background: #f6f4ea;
     padding: 30px 0;
-}
-
-#sb_main #main #sb_content #steps-nav #sb_booking_info ul li .content .title-small {
+  }
+  
+  #sb_main
+    #main
+    #sb_content
+    #steps-nav
+    #sb_booking_info
+    ul
+    li
+    .content
+    .title-small {
     color: #414345 !important;
     font-family: "Playfair Display SC";
     font-weight: 700;
-    font-style:normal;
-}
-
-section#main-buttons {
-    background:none !important;
-}
-
-#main-buttons .wrapper {
-    height:auto !important;
+    font-style: normal;
+  }
+  
+  section#main-buttons {
+    background: none !important;
+  }
+  
+  #main-buttons .wrapper {
+    height: auto !important;
     min-height: 350px;
-}
-
-#main #main-buttons .wrapper .inner .bar .btn.map {
+  }
+  
+  #main #main-buttons .wrapper .inner .bar .btn.map {
     display: none !important;
-}
-
-#sb-timeline #steps-nav #menu-active-bg {
+  }
+  
+  #sb-timeline #steps-nav #menu-active-bg {
     display: none !important;
-}
-
-/*               =              */
-/* Individual Categories Styles */
-.category-step.step-content .item .tab-with-popup {
+  }
+  
+  #sb-timeline #steps #sb_back_button {
+    top: -80px;
+  }
+  
+  /*               =              */
+  /* Individual Categories Styles */
+  .category-step.step-content .item .tab,
+  #sb_main #main #sb_content #steps-content .service-item .tab {
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0px 2px 12px #d6d2bf;
     transition: box-shadow 250ms;
-}
-.category-step.step-content .item .tab-with-popup:hover {
+  }
+  .category-step.step-content .item .tab:hover,
+  #sb_main #main #sb_content #steps-content .service-item .tab:hover {
     box-shadow: 0px 2px 22px #b5b094;
     transition: box-shadow 500ms;
-}
-
-
-.tab.tab-col .excerpt-info .preloader .img.user img {
+  }
+  
+  .tab.tab-col .excerpt-info .preloader .img.user img {
     border-radius: 5px 5px 0px 0px;
-}
-
-.category-step.step-content .item .tab-with-popup .content {
+  }
+  
+  .category-step.step-content .item .tab .content,
+  #sb_main #main #sb_content #steps-content .service-item .tab .content {
     display: grid;
     justify-content: center;
-}
-
-#sb_main #main #sb_content #steps-content .item .cap {
+  }
+  
+  #sb_main #main #sb_content #steps-content .item .content .cap {
     font-size: 36px;
     margin-bottom: 25px;
     margin-left: 5px;
     line-height: 35px;
-    font-family: 'Playfair Display SC';
+    font-family: "Playfair Display SC";
     color: #414345 !important;
     margin-left: 5px;
-}
-
-#sb_main #main #sb_content #steps-content .item .cap.short, #sb-timeline #steps #steps-content #sb_booking_content .provider-item .name {
+    max-width: 80%;
+    text-align: center;
+  }
+  
+  #sb_main #main #sb_content #steps-content .item .content .cap,
+  #sb-timeline #steps #steps-content #sb_booking_content .provider-item .name {
     height: auto;
     justify-self: center;
     border-bottom-style: solid;
     padding: 0 0 20px;
     border-bottom-color: #d1ac5b;
-}
-
-#sb_main #main #sb_content #steps-content .item .txt {
+  }
+  
+  #sb_main #main #sb_content #steps-content .item .txt,
+  #sb_main #main #sb_content #steps-content .item .bar-service {
     height: auto !important;
     justify-self: center;
     max-width: 70%;
     line-height: 30px;
-}
-
-.title-main, .inner-brand-font {
+  }
+  
+  #steps-content .item .bar-service {
+    margin-bottom: 2em;
+  }
+  
+  #sb-timeline
+    #steps
+    #steps-content
+    #sb_booking_content
+    .service-item
+    .bar-service
+    .d-flex {
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  
+  #sb-timeline
+    #steps
+    #steps-content
+    #sb_booking_content
+    .service-item
+    .bar-service
+    .time {
+    margin-top: 0;
+  }
+  
+  #steps-content #sb_booking_content .service-item .bar-service .time span,
+  #steps-content #sb_booking_content .service-item .bar-service .badge span {
+    font-weight: bold;
+    font-size: 14pt;
+  }
+  
+  .recurring-block {
+    display: none;
+  }
+  
+  .recurring-block .service-bar {
+    width: 70%;
+  }
+  
+  .title-main,
+  .inner-brand-font {
     color: #414345 !important;
     font-family: "Playfair Display SC";
     font-size: 36px;
-}
-
-#sb_main #main #sb_content #steps-content .item .btn.select a {
+  }
+  
+  #sb_main #main #sb_content #steps-content .item .btn.select a {
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: sans-serif;
     text-transform: uppercase;
     font-style: normal;
     font-size: 14px;
-}
-
-#sb-timeline #steps #steps-content #sb_booking_content .datetime-step #sb_timeview_container .timeline-wrapper #sb_time_slots_container .slot {
-    margin:1% !important;
-    width:18% !important;
-}
-
-#sb-timeline #steps #steps-content #sb_booking_content .datetime-step #sb_timeview_container .timeline-wrapper #sb_time_slots_container .slot a span.end-time {
-    width:auto;
-}
-
-.content .bar-service {
-    float:left;
-    width:100%;
-}
-
-@media screen and (max-width:767px) {
+  }
+  
+  #sb-timeline
+    #steps
+    #steps-content
+    #sb_booking_content
+    .datetime-step
+    #sb_timeview_container
+    .timeline-wrapper
+    #sb_time_slots_container
+    .slot {
+    margin: 1% !important;
+    width: 18% !important;
+  }
+  
+  #sb-timeline
+    #steps
+    #steps-content
+    #sb_booking_content
+    .datetime-step
+    #sb_timeview_container
+    .timeline-wrapper
+    #sb_time_slots_container
+    .slot
+    a
+    span.end-time {
+    width: auto;
+  }
+  
+  .content .bar-service {
+    float: left;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 767px) {
     #sb_main #main #sb_content #steps-content .item {
-        margin-bottom: 2.5em;
+      margin-bottom: 2.5em;
     }
-
-    #sb-timeline #steps #steps-content #sb_booking_content .datetime-step #sb_timeview_container .timeline-wrapper #sb_time_slots_container .slot {
-        width: 31% !important;
+  
+    #sb-timeline
+      #steps
+      #steps-content
+      #sb_booking_content
+      .datetime-step
+      #sb_timeview_container
+      .timeline-wrapper
+      #sb_time_slots_container
+      .slot {
+      width: 31% !important;
     }
-}
-
-
-/* MY BOOKINGS PAGE */
-
-#sb_main #main #sb_content #booking-result-view #booking-result-tabs .tabs_top_wrap .tabs-container .tab-link a, #booking-result-view #booking-result-tabs .tabs-container .tab-link a {
+  }
+  
+  /* Date Selector Screen  */
+  .slots-weekly-view-section {
+    border-radius: 10px !important;
+  }
+  .slots-weekly-view-section .timeline-wrapper {
+    padding: 10px 20px !important;
+    border-radius: 10px !important;
+  }
+  
+  /* Detail Confirmation Screen  */
+  .detail-step-wrap {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .detail-step-wrap .title-main {
+    font-size: 36px !important;
+    height: auto;
+    justify-self: center;
+    border-bottom-style: solid;
+    padding: 0 0 20px;
+    border-bottom-color: #d1ac5b;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    line-height: 35px;
+    font-family: "Playfair Display SC" !important;
+    color: #414345 !important;
+    text-align: center;
+  }
+  
+  .detail-step .row div:nth-child(1).col-sm-6 {
+    width: 69%;
+  }
+  .detail-step .section-divider {
+    display: none;
+  }
+  .detail-step .row div:nth-child(3).col-sm-6 {
+    width: 30%;
+  }
+  
+  #sb_terms_and_conditions .promotions-letter-flag {
+    display: none;
+  }
+  
+  /* MY BOOKINGS PAGE */
+  
+  #sb_main
+    #main
+    #sb_content
+    #booking-result-view
+    #booking-result-tabs
+    .tabs_top_wrap
+    .tabs-container
+    link
+    a,
+  #booking-result-view #booking-result-tabs .tabs-container .tab-link a {
     font-family: "Playfair Display SC";
     color: #333;
-}
-
-
-
-/* MEMBERSHIPS PAGE */
-#booking-result-view #booking-result-tabs .tabs-container .tab-link a[href="membership"] {
-    display:none !important;
-}
+  }
+  
+  /* MEMBERSHIPS PAGE */
+  #booking-result-view
+    #booking-result-tabs
+    .tabs-container
+    .tab-link
+    a[href="membership"] {
+    display: none !important;
+  }
+  
+  /* = = = = = = = = = = = = = = = = =  */
+  /* Custom Pages styles */
+  
+  #custom-pager .title-main {
+    font-size: 46px;
+  }
+  
+  /* = = = = = = = = = = = = = = = = =  */
+  /* MOBILE styles */
+  
+  @media only screen and (max-width: 760px) {
+    #sb_main #header .logo a img {
+      max-height: 100px !important;
+    }
+  
+    section#main-buttons {
+      min-height: 50px !important;
+      height: 251px !important;
+      margin-top: 0px;
+    }
+    #main-buttons .wrapper {
+      height: auto !important;
+      min-height: 230px;
+      display: block;
+    }
+    #main-buttons .wrapper .inner {
+      vertical-align: top;
+    }
+  
+    #main #main-content {
+      padding-top: 180px;
+    }
+  
+    #sb_content {
+      margin-top: -130px;
+    }
+  
+    #sb_main #content-view .index-data-wrapper {
+      padding: 0 10px 0;
+    }
+  }
+  
